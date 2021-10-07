@@ -1,4 +1,22 @@
-# Pattern Lab Node - Grunt Edition
+# Ingo's PatternLab Example
+
+- as atomic design PoC for frontend development
+- based on the grunt edition, as the pure patternlab-node failed to install
+- using Twig as template engine, which is already known and popular from Symfony
+
+## Requirements / Installation Overview
+
+- install node, npm, grunt-cli
+- cloned the base setup
+
+```
+npm install @pattern-lab/starterkit-twig-demo
+grunt patternlab:loadstarterkit --kit=@pattern-lab/starterkit-twig-demo
+```
+
+This setup was based on: Pattern Lab Node - Grunt Edition
+
+## Pattern Lab Node - Grunt Edition
 
 The Grunt wrapper around [Pattern Lab Node Core](https://github.com/pattern-lab/patternlab-node), providing tasks to interact with the core library and move supporting frontend assets.
 
@@ -6,10 +24,10 @@ The Grunt wrapper around [Pattern Lab Node Core](https://github.com/pattern-lab/
 
 The Grunt Edition comes with the following components:
 
-* `patternlab-node`: [GitHub](https://github.com/pattern-lab/patternlab-node), [npm](https://www.npmjs.com/package/patternlab-node)
-* `patternengine-node-mustache`: [GitHub](https://github.com/pattern-lab/patternengine-node-mustache), [npm](https://www.npmjs.com/package/patternengine-node-mustache)
-* `pattern-lab/styleguidekit-assets-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-assets-default)
-* `pattern-lab/styleguidekit-mustache-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-mustache-default)
+- `patternlab-node`: [GitHub](https://github.com/pattern-lab/patternlab-node), [npm](https://www.npmjs.com/package/patternlab-node)
+- `patternengine-node-mustache`: [GitHub](https://github.com/pattern-lab/patternengine-node-mustache), [npm](https://www.npmjs.com/package/patternengine-node-mustache)
+- `pattern-lab/styleguidekit-assets-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-assets-default)
+- `pattern-lab/styleguidekit-mustache-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-mustache-default)
 
 ## Prerequisites
 
@@ -21,8 +39,8 @@ It's also highly recommended that you [install grunt](http://gruntjs.com/getting
 
 There are two methods for downloading and installing the Grunt Edition:
 
-* [Download a pre-built package](#download-a-pre-built-package)
-* [Use npm](#use-npm)
+- [Download a pre-built package](#download-a-pre-built-package)
+- [Use npm](#use-npm)
 
 ### Download a pre-built package
 
@@ -34,14 +52,14 @@ The fastest way to get started with the Grunt Edition is to [download the pre-bu
 
 `npm` is a dependency management and package system which can pull in all of the Grunt Edition's dependencies for you. To accomplish this:
 
-* download or `git clone` this repository to an install location.
+- download or `git clone` this repository to an install location.
 
-* run the following
+- run the following
 
-    ```
-    cd install/location
-    npm install
-    ```
+  ```
+  cd install/location
+  npm install
+  ```
 
 Running `npm install` from a directory containing a `package.json` file will download all dependencies defined within.
 
@@ -84,7 +102,7 @@ To generate the front-end for Pattern Lab type:
 
 ### Watch for changes and re-generate Pattern Lab
 
-To watch for changes, re-generate the front-end, and server it via a BrowserSync server,  type:
+To watch for changes, re-generate the front-end, and server it via a BrowserSync server, type:
 
     grunt patternlab:serve
 
